@@ -4,14 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="spoy.css">
     <link rel="stylesheet" href="utility.css">
-    <title>Document</title>
+
+    <title>spotify clone</title>
 </head>
 
 <body>
+
     <div class="container-flex bg-black">
 
+        <!-- LEFT SIDEBAR -->
         <div class="left">
 
             <div class="home bg-grey rounded m-1 p-1">
@@ -22,8 +26,8 @@
                 </div>
 
                 <ul>
-                    <li><img class="invert" src="home.svg" alt="home">Home</li>
-                    <li><img class="invert" src="search.svg" alt="home">Search</li>
+                    <li><img class="invert" src="home.svg" alt="">Home</li>
+                    <li><img class="invert" src="search.svg" alt="">Search</li>
                 </ul>
 
             </div>
@@ -33,36 +37,17 @@
                 <h2>Your Library</h2>
 
                 <div class="songlist">
-                    <ul id="songList">
-
-                        <!-- SAMPLE SONG ITEMS (Spotify style) -->
-                        <li>
-                            <div>
-                                <div class="song-name">Song 1</div>
-                                <div class="song-artist">Unknown Artist</div>
-                            </div>
-                            <button>Play</button>
-                        </li>
-
-                        <li>
-                            <div>
-                                <div class="song-name">Song 2</div>
-                                <div class="song-artist">Unknown Artist</div>
-                            </div>
-                            <button>Play</button>
-                        </li>
-
-                    </ul>
+                    <ul id="songList"></ul>
                 </div>
 
                 <div class="footer">
 
-                    <div><a href="https://www.spotify.com/in-en/legal/"><span>Legal</span></a></div>
-                    <div><a href="https://www.spotify.com/in-en/safetyandprivacy/"><span>Safety & Privacy Center</span></a></div>
-                    <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/"><span>Privacy Policy</span></a></div>
-                    <div><a href="https://www.spotify.com/in-en/legal/cookies-policy/"><span>Cookies</span></a></div>
-                    <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"><span>About Ads</span></a></div>
-                    <div><a href="https://www.spotify.com/in-en/accessibility/"><span>Accessibility</span></a></div>
+                    <div><a href="#"><span>Legal</span></a></div>
+                    <div><a href="#"><span>Safety & Privacy Center</span></a></div>
+                    <div><a href="#"><span>Privacy Policy</span></a></div>
+                    <div><a href="#"><span>Cookies</span></a></div>
+                    <div><a href="#"><span>About Ads</span></a></div>
+                    <div><a href="#"><span>Accessibility</span></a></div>
 
                 </div>
 
@@ -70,11 +55,17 @@
 
         </div>
 
-        <div class="right bg-grey rounded m-1 ">
+        <!-- RIGHT SIDE -->
+        <div class="right bg-grey rounded m-1">
 
+            <!-- HEADER -->
             <div class="header">
 
-                <div class="nav">
+                <div class="left-controls">
+
+                    <div class="hamburger">
+                        <img src="hamburger.svg" alt="">
+                    </div>
 
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
                         fill="none" stroke="#ffffff" stroke-width="1.5">
@@ -95,78 +86,103 @@
 
             </div>
 
+            <!-- PLAYLIST -->
             <div class="spotify-playlist">
+
                 <h1>Spotify Playlists</h1>
 
                 <div class="cardcontainer">
 
                     <div class="card">
-                        <img src="images.jpg" alt="">
-                        <h2>Happy Hits</h2>
-                        <p>Hits to boost your mood and fill you with happiness!</p>
+                        <img src="p1.jpg" alt="">
+                        <h2>Faded</h2>
+                        <p>A deep electronic track about searching for something lost</p>
+                        <div class="card-play" data-index="0">
+                            <img src="cardplay.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="p2.jpg" alt="">
+                        <h2>Night Changes</h2>
+                        <p>A soft song about how life and relationships change over time.</p>
+
+                        <div class="card-play" data-index="1">
+                            <img src="cardplay.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="p3.jpg" alt="">
+                        <h2>Heat Waves</h2>
+                        <p>A chill indie track about missing someone and summer memories</p>
+
+                        <div class="card-play" data-index="2">
+                            <img src="cardplay.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="p4.jpg" alt="">
+                        <h2>Radioactive</h2>
+                        <p>A dark energetic song about awakening and transformation</p>
+
+                        <div class="card-play" data-index="3">
+                            <img src="cardplay.svg" alt="">
+                        </div>
                     </div>
 
                     <div class="card">
                         <img src="happy.jpg" alt="">
                         <h2>Happy Hits</h2>
                         <p>Hits to boost your mood and fill you with happiness!</p>
-                    </div>
-                    <div class="card">
-                        <img src="happy.jpg" alt="">
-                        <h2>Happy Hits</h2>
-                        <p>Hits to boost your mood and fill you with happiness!</p>
+
+                        <div class="card-play" data-index="4">
+                            <img src="cardplay.svg" alt="">
+                        </div>
                     </div>
 
                     <div class="card">
-                        <img src="happy.jpg" alt="">
+                        <img src="p1.jpg" alt="">
                         <h2>Happy Hits</h2>
                         <p>Hits to boost your mood and fill you with happiness!</p>
-                    </div>
 
-                    <div class="card">
-                        <img src="happy.jpg" alt="">
-                        <h2>Happy Hits</h2>
-                        <p>Hits to boost your mood and fill you with happiness!</p>
+                        <div class="card-play" data-index="5">
+                            <img src="cardplay.svg" alt="">
+                        </div>
                     </div>
-
-                    <div class="card">
-                        <img src="happy.jpg" alt="">
-                        <h2>Happy Hits</h2>
-                        <p>Hits to boost your mood and fill you with happiness!</p>
-                    </div>
-
-                    <div class="card">
-                        <img src="happy.jpg" alt="">
-                        <h2>Happy Hits</h2>
-                        <p>Hits to boost your mood and fill you with happiness!</p>
-                    </div>
-
-                    <div class="card">
-                        <img src="happy.jpg" alt="">
-                        <h2>Happy Hits</h2>
-                        <p>Hits to boost your mood and fill you with happiness!</p>
-                    </div>
-                    <div class="card">
-                        <img src="happy.jpg" alt="">
-                        <h2>Happy Hits</h2>
-                        <p>Hits to boost your mood and fill you with happiness!</p>
-                    </div>
-
-
 
                 </div>
 
                 <!-- PLAYBAR -->
                 <div class="playbar">
+
                     <div class="songinfo"></div>
 
                     <div class="songbuttons">
-                        <img id="prev" src="prev.svg" alt="">
-                        <img id="play" src="play.svg" alt="">
-                        <img id="next" src="nextsong.svg" alt="">
+
+                        <img width="40" id="prev" src="prev.svg" alt="">
+                        <img width="40" id="play" src="play.svg" alt="">
+                        <img width="40" id="next" src="nextsong.svg" alt="">
+
                     </div>
 
-                    <div class="songtime"></div>
+                    <div class="playbar-bottom">
+
+                        <div class="songtime"></div>
+
+                        <div class="volume-control">
+                            <img src="volume.svg" class="volume-icon" alt="">
+                            <input type="range" id="volume" min="0" max="100" value="50">
+                        </div>
+
+                    </div>
+
+                    <div class="seekbar">
+                        <div class="progress"></div>
+                        <div class="circle"></div>
+                    </div>
+
                 </div>
 
             </div>
@@ -178,4 +194,5 @@
     <script src="script.js"></script>
 
 </body>
+
 </html>
